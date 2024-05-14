@@ -1,0 +1,5 @@
+1.在linux下使用的FILE*，不知道为什么输出到文件里就文件名乱码了（应该是因为不是UTF-8）
+解决：改用C++的文件流就不会乱码了
+2.char*和const string其实在赋值兼容性方面差不多，但是C++的文件流更推荐const string;
+3.backslash and newline separated by space。
+其出现的原因是由于#define xxx \在斜杠后面多了空格，删除即可。
