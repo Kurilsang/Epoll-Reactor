@@ -4,7 +4,7 @@
 using namespace std;
 using namespace kuril::utility;
 
-vector<item> items;
+static vector<item> items;
 
 // int start_epoll(int port)
 // {
@@ -118,24 +118,30 @@ vector<item> items;
 
 int StartAccept(NCALLBACK t_acceptcb,int t_epfd, int t_fd, uint32_t t_EEVENT)// 接受的函数多加一层包装，减少外部调用的代码
     {
-        t_acceptcb(t_epfd,t_fd,t_EEVENT);
+        debug("进入ac回调的包装");
         item* temp = new item(t_epfd,t_fd);
+        item it = *temp;
         items.push_back(*temp);
+        t_acceptcb(t_epfd,t_fd,t_EEVENT);
         delete temp;
+        return 0;
     }
 
 
-    item *get_item_by_fd(int t_fd)
+    item* get_item_by_fd(int t_fd)
     {
         if (items.empty())
         {
             return NULL;
         }
         // 查找 找到了就返回找不到就返回NULL
-        for (auto it : items)
+        int count=0;
+        for(int i = 0; i < items.size(); i++)
         {
-            if (it.fd == t_fd)
-                return &it;
+            if (items[i].fd==t_fd)
+            {
+                return &items[i];
+            }
         }
         return NULL;
 }

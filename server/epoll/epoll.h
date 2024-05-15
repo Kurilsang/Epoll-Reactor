@@ -8,10 +8,14 @@
 #include <iostream>// perror
 #include <string.h>// memset
 
+#include<functional>
 
 using namespace std;
 
-typedef int NCALLBACK(int epfd, int fd, uint32_t EEVENT);
+// typedef int NCALLBACK(int epfd, int fd, uint32_t EEVENT);
+// 回调函数模板
+typedef function<int(int epfd, int fd, uint32_t EEVENT)> NCALLBACK;
+
 class item
 {
     public:
@@ -20,13 +24,22 @@ class item
     char buffer[1024];
     char ip[128];
     int port;
-
+    uint32_t E;
+    item(int t_epfd,int t_fd,NCALLBACK ac,NCALLBACK rd, NCALLBACK wt, NCALLBACK cl):acceptCB(ac),readCB(rd),writeCB(wt),closeCB(cl)
+    {
+        epfd=t_epfd;
+        fd=t_fd;
+    }
     item(int t_epfd,int t_fd)
     {
         epfd=t_epfd;
         fd=t_fd;
     }
-
+    void excuteAC(int epfd_, int fd_, uint32_t EEVENT)
+    {
+        E=EEVENT;epfd=epfd_;fd=fd_;
+        acceptCB(epfd,fd,E);
+    }
     //回调函数们
     NCALLBACK acceptCB;
     NCALLBACK readCB;
