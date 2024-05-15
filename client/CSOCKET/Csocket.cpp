@@ -32,9 +32,11 @@ int connectServer(const char *ip, int port, int clientfd)
 void working(int clientfd, NCALLBACK callback)
 {
     char buffer[1024];
+    char ip[128]="192.168.148.129";
     int ret;
     while(1)
     {
+        printf("%s>",ip);
         cin.getline(buffer,sizeof buffer);
         ret = write(clientfd, buffer, sizeof buffer);
         if (ret == -1)

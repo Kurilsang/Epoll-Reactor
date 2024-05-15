@@ -8,6 +8,7 @@
 #include <iostream>// perror
 #include <string.h>// memset
 
+
 #include<functional>
 
 using namespace std;
@@ -25,10 +26,11 @@ class item
     char ip[128];
     int port;
     uint32_t E;
-    item(int t_epfd,int t_fd,NCALLBACK ac,NCALLBACK rd, NCALLBACK wt, NCALLBACK cl):acceptCB(ac),readCB(rd),writeCB(wt),closeCB(cl)
+    item(int t_epfd,int t_fd,NCALLBACK ac,NCALLBACK rd, NCALLBACK wt, NCALLBACK cl)
     {
         epfd=t_epfd;
         fd=t_fd;
+        acceptCB=ac;readCB=rd;writeCB=wt;closeCB=cl;
     }
     item(int t_epfd,int t_fd)
     {
@@ -60,4 +62,4 @@ int modInEPFD(int fd,int epfd, uint32_t EEVENT,epoll_event ev);// 把某个fd的
 
 item* get_item_by_fd(int t_fd);// 通过fd获取它对应的item
 
-int StartAccept(NCALLBACK t_acceptcb,int t_epfd, int t_fd, uint32_t t_EEVENT);// 接受的函数多加一层包装，减少外部调用的代码
+void StartAccept(NCALLBACK t_acceptcb,int t_epfd, int t_fd, uint32_t t_EEVENT,NCALLBACK ac, NCALLBACK rd, NCALLBACK wt, NCALLBACK cl);// 接受的函数多加一层包装，减少外部调用的代码

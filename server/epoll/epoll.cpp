@@ -116,15 +116,15 @@ static vector<item> items;
 //     return 0;
 // }
 
-int StartAccept(NCALLBACK t_acceptcb,int t_epfd, int t_fd, uint32_t t_EEVENT)// 接受的函数多加一层包装，减少外部调用的代码
+void StartAccept(NCALLBACK t_acceptcb,int t_epfd, int t_fd, uint32_t t_EEVENT,NCALLBACK ac, NCALLBACK rd, NCALLBACK wt, NCALLBACK cl)// 接受的函数多加一层包装，减少外部调用的代码
     {
         debug("进入ac回调的包装");
-        item* temp = new item(t_epfd,t_fd);
+        item* temp = new item(t_epfd,t_fd,ac,rd,wt,cl);
         item it = *temp;
         items.push_back(*temp);
+        cout<<"1"<<endl;
         t_acceptcb(t_epfd,t_fd,t_EEVENT);
-        delete temp;
-        return 0;
+        delete(temp);
     }
 
 
@@ -136,9 +136,9 @@ int StartAccept(NCALLBACK t_acceptcb,int t_epfd, int t_fd, uint32_t t_EEVENT)// 
         }
         // 查找 找到了就返回找不到就返回NULL
         int count=0;
-        for(int i = 0; i < items.size(); i++)
+        for(int i = 0; i <=items.size(); i++)
         {
-            if (items[i].fd==t_fd)
+            if (items[i].fd&t_fd)
             {
                 return &items[i];
             }
