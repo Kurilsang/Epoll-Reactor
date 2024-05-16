@@ -1,18 +1,32 @@
 # Epoll-Reactor
 一个基础的Reactor模型封装
 # 目录
++ 文件分层
 + 食用指南
 + 实现功能
 + 想说的话
 ***
+## 文件分层
+--server--callback（回调函数的具体实现，即具体传入Reactor的具体函数）
+        --log（日志模块的具体实现）
+        --minIni（读取配置文件）
+        --Reactor(Reactor模型的主体代码)
+        --Smain.cpp(服务端主函数)
+        --Sconfig.ini(服务端配置文件)
+        --testlog.txt(日志)
+--client--CSOCKET(把socket客户端的代码封装起来的头文件)
+        --main.cpp(客户端主函数)
+        --Cconfig.ini(客户端配置文件)
+        --CLOG.log(客户端日志文件)
 ## 食用指南
 + 运行环境：Linux（Ubuntu64位）
 + 使用语言：C/C++
-+ 具体步骤：修改server文件夹和client文件夹下的Sconfig.ini和Cconfig.ini，注意使得port是同样的，要将Cconfig中的ip设置为本地ip（可通过Linux的ifconfig指令查看）
++ 具体步骤：修改server文件夹和client文件夹下的Sconfig.ini和Cconfig.ini，注意使得port是同样的，要将Cconfig中的ip设置为本地ip（可通过Linux的ifconfig指令查看）,然后就可以直接启动源代码拉
+
 ## 实现功能
 + 通过socket编程，使用epoll封装成了基础的Reactor模型，即IO多路复用+回调函数
-+ 使用了日志模块，日志模块的使用指令分别为debug("测试%s",变量)，info("测试%s",变量)，error("测试%s",变量)，fatal("测试%s",变量).
-+ 从配置文件中读取信息载入程序，不用修改源代码就可以修改关键参数
++ 使用了日志模块，日志模块的使用指令分别为debug("测试%s",变量)，info("测试%s",变量)，error("测试%s",变量)，fatal("测试%s",变量).客户端和服务端的日志写入的路径都是各自的根目录下的log文件
++ 从配置文件中读取信息载入程序，不用修改源代码就可以修改关键参数，即Sconfig.ini和Cconfig.ini
 + 实现的指令：ping
 ## 想说的话
 一天之内只做出了这么点内容，感觉有点不好意思交
