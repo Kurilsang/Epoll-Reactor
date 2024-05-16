@@ -7,17 +7,18 @@
 + 想说的话
 ***
 ## 文件分层
---server--callback（回调函数的具体实现，即具体传入Reactor的具体函数）
-        --log（日志模块的具体实现）
-        --minIni（读取配置文件）
-        --Reactor(Reactor模型的主体代码)
-        --Smain.cpp(服务端主函数)
-        --Sconfig.ini(服务端配置文件)
-        --testlog.txt(日志)
---client--CSOCKET(把socket客户端的代码封装起来的头文件)
-        --main.cpp(客户端主函数)
-        --Cconfig.ini(客户端配置文件)
-        --CLOG.log(客户端日志文件)
+server<br>--callback（回调函数的具体实现，即具体传入Reactor的具体函数）<br>
+        --log（日志模块的具体实现）<br>
+        --minIni（读取配置文件）<br>
+        --Reactor(Reactor模型的主体代码)<br>
+        --Smain.cpp(服务端主函数)<br>
+        --Sconfig.ini(服务端配置文件)<br>
+        --testlog.txt(日志)<br>
+        <br>
+client<br>--CSOCKET(把socket客户端的代码封装起来的头文件)<br>
+        --main.cpp(客户端主函数)<br>
+        --Cconfig.ini(客户端配置文件)<br>
+        --CLOG.log(客户端日志文件)<br>
 ## 食用指南
 + 运行环境：Linux（Ubuntu64位）
 + 使用语言：C/C++
