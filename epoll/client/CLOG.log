@@ -33,3 +33,4 @@
 2024-05-16 05-42-05 FATAL /home/kuril/Desktop/epoll/client/main.cpp 45 connect error
 2024-05-16 05-42-28 FATAL /home/kuril/Desktop/epoll/client/main.cpp 45 connect error
 2024-05-16 05-59-57 INFO /home/kuril/Desktop/epoll/client/CSOCKET/Csocket.cpp 58 客户端与服务器断开连接
+2024-05-16 07-00-28 FATAL /home/kuril/Desktop/epoll/client/main.cpp 53 connect error

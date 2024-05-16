@@ -26,7 +26,7 @@ void parsec(const char* buffer)
 {
 	memset(&temp,0,sizeof temp);
 	sscanf(buffer,"%[^ ]%s",temp.status,temp.data);
-	printf("响应情况:%s\n返回内容:%s\n",temp.status,temp.data);
+	printf("响应情况:%s\n返回内容:%s\n\n",temp.status,temp.data);
 }
 
 int main()

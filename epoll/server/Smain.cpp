@@ -21,7 +21,7 @@ int main()
     int maxEvent = ini_getl("network","MAX_EVENTS",-1,inifile);
     int listenNum = ini_getl("network","listenNum",-1,inifile);
     // 初始化日志模块
-    log::getInstance()->open("testLog.txt");
+    log::getInstance()->open("testLog.log");
     log::getInstance()->level(log::DEBUG);
 
     // 初始化Reactor模块

@@ -1,0 +1,48 @@
+2024-05-16 06-54-35 DEBUG /home/kuril/Desktop/epoll/server/Smain.cpp 47 进入循环
+2024-05-16 06-55-02 DEBUG /home/kuril/Desktop/epoll/server/Reactor/Reactor.cpp 11 进入ac回调的包装
+2024-05-16 06-55-02 DEBUG /home/kuril/Desktop/epoll/server/callback/callback.cpp 13 进入ac回调
+2024-05-16 06-56-58 FATAL /home/kuril/Desktop/epoll/server/Reactor/Reactor.cpp 54 bind error
+2024-05-16 06-56-58 DEBUG /home/kuril/Desktop/epoll/server/Smain.cpp 47 进入循环
+2024-05-16 06-57-40 FATAL /home/kuril/Desktop/epoll/server/Reactor/Reactor.cpp 54 bind error
+2024-05-16 06-57-40 DEBUG /home/kuril/Desktop/epoll/server/Smain.cpp 47 进入循环
+2024-05-16 06-57-59 DEBUG /home/kuril/Desktop/epoll/server/Smain.cpp 47 进入循环
+2024-05-16 06-58-05 DEBUG /home/kuril/Desktop/epoll/server/Reactor/Reactor.cpp 11 进入ac回调的包装
+2024-05-16 06-58-05 DEBUG /home/kuril/Desktop/epoll/server/callback/callback.cpp 13 进入ac回调
+2024-05-16 06-58-07 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.13054540--�����
+2024-05-16 06-58-09 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.13054540--�����
+2024-05-16 06-58-11 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.13054540--@�WUUU
+2024-05-16 06-58-13 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.13054540--�����
+2024-05-16 06-58-14 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.13054540--@�WUUU
+2024-05-16 06-58-16 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.13054540--�����
+2024-05-16 06-58-16 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.13054540--@�WUUU
+2024-05-16 06-58-18 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.13054540--�����
+2024-05-16 06-58-18 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.13054540--@�WUUU
+2024-05-16 06-58-19 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.13054540--@�WUUU
+2024-05-16 06-59-34 DEBUG /home/kuril/Desktop/epoll/server/Smain.cpp 47 进入循环
+2024-05-16 06-59-42 DEBUG /home/kuril/Desktop/epoll/server/Reactor/Reactor.cpp 11 进入ac回调的包装
+2024-05-16 06-59-42 DEBUG /home/kuril/Desktop/epoll/server/callback/callback.cpp 13 进入ac回调
+2024-05-16 06-59-45 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.130:35408--200 pong
+2024-05-16 06-59-46 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.130:35408--400 语法错误
+2024-05-16 06-59-47 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.130:35408--400 语法错误
+2024-05-16 06-59-48 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.130:35408--400 语法错误
+2024-05-16 06-59-49 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.130:35408--200 pong
+2024-05-16 06-59-50 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.130:35408--400 语法错误
+2024-05-16 07-00-28 DEBUG /home/kuril/Desktop/epoll/server/Smain.cpp 47 进入循环
+2024-05-16 07-00-36 DEBUG /home/kuril/Desktop/epoll/server/Reactor/Reactor.cpp 11 进入ac回调的包装
+2024-05-16 07-00-36 DEBUG /home/kuril/Desktop/epoll/server/callback/callback.cpp 13 进入ac回调
+2024-05-16 07-00-38 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.130:53974--200 pong
+2024-05-16 07-00-39 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.130:53974--400 语法错误
+2024-05-16 07-00-39 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.130:53974--400 语法错误
+2024-05-16 07-01-21 FATAL /home/kuril/Desktop/epoll/server/Reactor/Reactor.cpp 54 bind error
+2024-05-16 07-01-21 DEBUG /home/kuril/Desktop/epoll/server/Smain.cpp 47 进入循环
+2024-05-16 07-02-05 DEBUG /home/kuril/Desktop/epoll/server/Smain.cpp 47 进入循环
+2024-05-16 07-02-10 DEBUG /home/kuril/Desktop/epoll/server/Reactor/Reactor.cpp 11 进入ac回调的包装
+2024-05-16 07-02-10 DEBUG /home/kuril/Desktop/epoll/server/callback/callback.cpp 13 进入ac回调
+2024-05-16 07-02-12 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.130:36666--200 pong
+
+2024-05-16 07-02-13 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.130:36666--400 语法错误
+
+2024-05-16 07-02-14 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.130:36666--400 语法错误
+
+2024-05-16 07-02-14 INFO /home/kuril/Desktop/epoll/server/callback/callback.cpp 54 192.168.148.130:36666--400 语法错误
+

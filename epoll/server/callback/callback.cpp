@@ -51,6 +51,7 @@ int rd(int epfd, int fd, uint32_t EEVENT)// read回调
             temp = "400 ";temp.append("语法错误");
         }
         printf("响应：\n%s\n",temp.c_str());
+        info("%s:%d--%s\n",it->ip,it->port,temp.c_str());
         write(fd,temp.c_str(),sizeof temp);
     }
     else if(len == 0)
