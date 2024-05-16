@@ -5,8 +5,10 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 // "${workspaceFolder}/server/start",
-                "${workspaceFolder}/server/epoll",
+                "${workspaceFolder}/server/Reactor",
                 "${workspaceFolder}/server/log",
+                "${workspaceFolder}/server/minIni",
+                "${workspaceFolder}/server/callback",
                 // "${workspaceFolder}/server/logger"
                 "${workspaceFolder}/client/CSOCKET"
             ],
