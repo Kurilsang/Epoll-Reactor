@@ -1,0 +1,35 @@
+2024-05-15 04-12-20 FATAL /home/kuril/桌面/Epoll/client/main.cpp 29 connect error
+2024-05-15 04-13-35 FATAL /home/kuril/桌面/Epoll/client/main.cpp 29 connect error
+2024-05-15 04-14-04 FATAL /home/kuril/桌面/Epoll/client/main.cpp 29 connect error
+2024-05-15 04-14-53 FATAL /home/kuril/桌面/Epoll/client/main.cpp 29 connect error
+2024-05-15 04-15-15 FATAL /home/kuril/桌面/Epoll/client/main.cpp 29 connect error
+2024-05-15 04-17-28 FATAL /home/kuril/桌面/Epoll/client/main.cpp 29 connect error
+2024-05-15 04-18-45 FATAL /home/kuril/桌面/Epoll/client/main.cpp 29 connect error
+2024-05-15 04-20-50 FATAL /home/kuril/桌面/Epoll/client/main.cpp 29 connect error
+2024-05-15 04-22-43 FATAL /home/kuril/桌面/Epoll/client/main.cpp 30 connect error
+2024-05-15 08-50-59 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 62 异常发生
+2024-05-15 09-40-09 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 09-43-44 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 09-44-57 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 09-47-27 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 09-48-05 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 09-54-13 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 10-24-51 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 10-33-23 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 10-34-35 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 10-36-39 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 10-38-27 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 10-39-08 FATAL /home/kuril/桌面/Epoll/client/main.cpp 42 connect error
+2024-05-15 10-40-29 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 10-43-54 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 10-45-09 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 10-45-16 FATAL /home/kuril/桌面/Epoll/client/main.cpp 42 connect error
+2024-05-15 10-46-09 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 10-50-45 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 11-08-17 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 11-09-25 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 11-13-35 FATAL /home/kuril/桌面/Epoll/client/CSOCKET/Csocket.cpp 64 异常发生
+2024-05-15 12-35-12 FATAL /home/kuril/桌面/Epoll/client/main.cpp 42 connect error
+2024-05-16 05-42-05 FATAL /home/kuril/Desktop/epoll/client/main.cpp 45 connect error
+2024-05-16 05-42-28 FATAL /home/kuril/Desktop/epoll/client/main.cpp 45 connect error
+2024-05-16 05-59-57 INFO /home/kuril/Desktop/epoll/client/CSOCKET/Csocket.cpp 58 客户端与服务器断开连接
