@@ -22,7 +22,7 @@ client<br>--CSOCKET(把socket客户端的代码封装起来的头文件)<br>
 ## 食用指南
 + 运行环境：Linux（Ubuntu64位）
 + 使用语言：C/C++
-+ 具体步骤：修改server文件夹和client文件夹下的Sconfig.ini和Cconfig.ini，注意使得port是同样的，要将Cconfig中的ip设置为本地ip（可通过Linux的ifconfig指令查看）,然后就可以直接启动源代码拉
++ 具体步骤：修改server文件夹和client文件夹下的Sconfig.ini和Cconfig.ini，注意使得port是同样的，要将Cconfig中的ip设置为目标主机ip,局域网内可以直接连，否则需要进行内网穿透或者使用公网ip（可通过Linux的ifconfig指令查看）,然后就可以直接启动源代码拉
 
 ## 实现功能
 + 通过socket编程，使用epoll封装成了基础的Reactor模型，即IO多路复用+回调函数
