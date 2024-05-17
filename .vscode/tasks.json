@@ -15,6 +15,7 @@
                 "-I", "${workspaceFolder}/server/log", "${workspaceFolder}/server/log/log.cpp",
                 "-I", "${workspaceFolder}/server/minIni", "${workspaceFolder}/server/minIni/minIni.c",
                 "-I", "${workspaceFolder}/server/callback","${workspaceFolder}/server/callback/callback.cpp",
+                "-I", "${workspaceFolder}/server/ThreadPool","${workspaceFolder}/server/ThreadPool/ThreadPool.cpp",
                 // "-I", "${workspaceFolder}/server/logger", "${workspaceFolder}/server/logger/logger.cpp",
                 "-I", "${workspaceFolder}/client/CSOCKET", "${workspaceFolder}/client/CSOCKET/Csocket.cpp",
             ],

@@ -1,8 +1,9 @@
-#include "Reactor.h"
+#include"Reactor.h"
 #include "log.h"
 #include<minIni.h>
 #include"minGlue.h"
 #include"callback.h"
+#include"ThreadPool.h"
 
 // 初始化各项模块
 using namespace std;
@@ -55,6 +56,7 @@ int main()
             if(curfd == serverfd)
             {
                 StartAccept(ac,epfd,serverfd,EPOLLIN,ac,rd,wt,cl);
+                // StartAccept(ac,epfd,serverfd,EPOLLIN,ac,rd,wt,cl);
 
             }else{// 处理业务fd
                 item* it = get_item_by_fd(curfd);
@@ -62,12 +64,13 @@ int main()
                 if(evs[i].events&EPOLLIN) 
                 {
                     
-                    it->readCB(epfd,curfd,EPOLLIN);
+                    ThreadPool::getInstance()->enqueue([=]{it->readCB(epfd,curfd,EPOLLIN);});
+                    // it->readCB(epfd,curfd,EPOLLIN);
                 }
                 // 处理关闭事件
                 if(evs[i].events&EPOLLHUP)
                 {
-                    it->closeCB(epfd,curfd,NULL);
+                    ThreadPool::getInstance()->enqueue([=]{it->closeCB(epfd,curfd,NULL);});
                 }
                 
             }
@@ -75,7 +78,7 @@ int main()
             
         }
     }
-
+    ThreadPool::deleteInstance();
     
     return 0;
 }
